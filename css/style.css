@@ -1,0 +1,38 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+		}
+#box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 486px;
+	height: 94px;
+	background-color: #DBDBDB;
+	border: 2px solid #868686;
+	box-shadow: 2.5px 2.5px 5px 5px #e1e1e1;
+}
+a{
+	display: block;
+	background-color: #fff;
+	float: left;
+	width: 39px;
+	height: 53px;
+	border:1px solid #999999;
+	text-decoration: none;
+	text-align: center;
+	font-family: "微软雅黑";
+	color:#999999;
+	padding: 20px;
+}
+a:hover{
+	color:#DE525E;
+}
+a i{
+	position: relative;
+	top: 0;
+	opacity: 1;
+}

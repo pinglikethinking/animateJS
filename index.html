@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="box">
+		<a href="#"><i><img src="img/1.jpg"></i><p>店外卖</p></a>
+		<a href="#"><i><img src="img/2.jpg"></i><p>彩票</p></a>
+		<a href="#"><i><img src="img/3.jpg"></i><p>游戏</p></a>
+		<a href="#"><i><img src="img/4.jpg"></i><p>电影</p></a>
+		<a href="#"><i><img src="img/5.jpg"></i><p>充话费</p></a>
+		<a href="#"><i><img src="img/6.jpg"></i><p>旅行</p></a>
+	</div>
+	<script src="js/animate.js"></script>
+	<script type="text/javascript">
+	window.onload=function(){
+		var blocks=document.getElementsByTagName("a");
+		for(var i=0;i<blocks.length;i++){
+			blocks[i].onmouseover=function(){
+				var _this=this.getElementsByTagName("i")[0];
+				animate(_this,{"top":-30,"opacity":0},function(){
+					_this.style.top=30+"px";
+					animate(_this,{"top":0,"opacity":100});
+				});
+			};
+		}
+	};
+	</script>
+</body>
+</html>
